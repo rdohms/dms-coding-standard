@@ -1,0 +1,18 @@
+
+PHP CODE SNIFFER REPORT SUMMARY
+----------------------------------------------------------------------
+FILE                                                  ERRORS  WARNINGS
+----------------------------------------------------------------------
+tests/input/return_type_on_methods.php                14      0
+tests/input/test-case.php                             6       0
+tests/input/return_type_on_closures.php               18      0
+tests/input/concatenation_spacing.php                 31      0
+tests/input/not_spacing.php                           8       0
+tests/input/example-class.php                         22      0
+----------------------------------------------------------------------
+A TOTAL OF 99 ERRORS AND 0 WARNINGS WERE FOUND IN 6 FILES
+----------------------------------------------------------------------
+PHPCBF CAN FIX 88 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+

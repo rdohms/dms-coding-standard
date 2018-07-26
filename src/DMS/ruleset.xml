@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<ruleset name="DMS">
+    <description>The DMS coding standard (for PHP projects).</description>
+
+    <!-- Import Doctrine coding standard (base) -->
+    <rule ref="Doctrine">
+        <exclude name="Squiz.PHP.GlobalKeyword" />
+    </rule>
+
+    <!-- Require presence of declare(strict_types=1) -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" value="1"/>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+            <property name="newlinesCountAfterDeclare" value="2"/>
+        </properties>
+    </rule>
+
+    <!-- Require space around colon in return types -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
+        <properties>
+            <property name="spacesCountBeforeColon" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- Require types to be written as natively if possible;
+         require iterable types to specify phpDoc with their content;
+         forbid useless/duplicated information in phpDoc -->
+    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
+        <properties>
+            <property name="enableEachParameterAndReturnInspection" value="true"/>
+            <property name="traversableTypeHints" type="array" value="Doctrine\Common\Collections\Collection"/>
+            <property
+                    name="usefulAnnotations"
+                    type="array"
+                    value="
+                    @after,
+                    @afterClass,
+                    @AfterFeature,
+                    @AfterMethods,
+                    @AfterScenario,
+                    @AfterStep,
+                    @AfterSuite,
+                    @Attribute,
+                    @Attributes,
+                    @before,
+                    @beforeClass,
+                    @BeforeFeature,
+                    @BeforeMethods,
+                    @BeforeScenario,
+                    @BeforeStep,
+                    @BeforeSuite,
+                    @covers,
+                    @coversDefaultClass,
+                    @coversNothing,
+                    @dataProvider,
+                    @depends,
+                    @deprecated,
+                    @Enum,
+                    @expectedDeprecation,
+                    @expectedException,
+                    @expectedExceptionCode,
+                    @expectedExceptionMessage,
+                    @expectedExceptionMessageRegExp,
+                    @Given,
+                    @group,
+                    @Groups,
+                    @IgnoreAnnotation,
+                    @internal,
+                    @Iterations,
+                    @link,
+                    @ODM\,
+                    @ORM\,
+                    @Required,
+                    @Revs,
+                    @runInSeparateProcess,
+                    @runTestsInSeparateProcesses,
+                    @see,
+                    @Serializer\,
+                    @Target,
+                    @test,
+                    @Then,
+                    @throws,
+                    @Transform,
+                    @uses,
+                    @When
+                "
+            />
+        </properties>
+    </rule>
+</ruleset>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="PHPCS Coding Standards for DMS">
+    <description>Check the code of the sniffs in rdohms/dms-coding-standard.</description>
+
+    <arg name="basepath" value="."/>
+    <arg name="extensions" value="php"/>
+    <arg name="colors" />
+
+    <arg value="p"/>
+
+    <rule ref="DMS"/>
+</ruleset>
