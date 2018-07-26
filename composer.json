@@ -1,5 +1,5 @@
 {
-    "name": "rdohms/dms-coding-standard",
+    "name": "dms/coding-standard",
     "type": "phpcodesniffer-standard",
     "description": "DMS Coding Standard",
     "license": "MIT",
