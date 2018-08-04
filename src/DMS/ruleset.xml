@@ -5,6 +5,7 @@
     <!-- Import Doctrine coding standard (base) -->
     <rule ref="Doctrine">
         <exclude name="Squiz.PHP.GlobalKeyword" />
+        <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
     </rule>
 
     <!-- Require presence of declare(strict_types=1) -->
