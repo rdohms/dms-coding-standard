@@ -26,9 +26,9 @@ $string = $standards . 'are awesome';
 
 $string = $standards . $areAwesome . 'even' . 'more' . $string;
 
-$string .=$standards;
 $string .= $standards;
-$string .=$standards;
+$string .= $standards;
+$string .= $standards;
 
 $string = $standards .
     $areAwesome .

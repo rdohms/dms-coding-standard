@@ -6,7 +6,5 @@
     <arg name="extensions" value="php"/>
     <arg name="colors" />
 
-    <arg value="p"/>
-
     <rule ref="DMS"/>
 </ruleset>

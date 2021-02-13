@@ -4,10 +4,7 @@
     "description": "DMS Coding Standard",
     "license": "MIT",
     "require": {
-        "php": "^7.2",
-        "squizlabs/php_codesniffer": "^3.2",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.2",
-        "slevomat/coding-standard": ">=4.4.0 <4.4.4 || >=4.4.5",
-        "doctrine/coding-standard": "^4"
+        "php": "^7.4 || ^8",
+        "doctrine/coding-standard": "^8"
     }
 }
