@@ -4,7 +4,7 @@
     "description": "DMS Coding Standard",
     "license": "MIT",
     "require": {
-        "php": "^7.4 || ^8",
+        "php": "^7.2 || ^8",
         "doctrine/coding-standard": "^8"
     }
 }
