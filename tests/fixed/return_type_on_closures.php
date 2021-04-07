@@ -1,22 +1,22 @@
 <?php
 declare(strict_types=1);
 
-function (): void {
+static function (): void {
 }
 
-function (): void {
+static function (): void {
 }
 
-function (): void {
+static function (): void {
 }
 
-function (): void {
+static function (): void {
 }
 
-function (): void {
+static function (): void {
 }
 
-function (
+static function (
     int $a,
     int $c,
     int $d,
@@ -25,7 +25,7 @@ function (
 ): void {
 }
 
-function (
+static function (
     int $a,
     int $c,
     int $d,
@@ -34,7 +34,7 @@ function (
 ): void {
 }
 
-function (
+static function (
     int $a,
     int $c,
     int $d,
@@ -43,7 +43,7 @@ function (
 ): void {
 }
 
-function (
+static function (
     int $a,
     int $c,
     int $d,
@@ -52,7 +52,7 @@ function (
 ): void {
 }
 
-function (
+static function (
     int $a,
     int $c,
     int $d,

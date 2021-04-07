@@ -1,0 +1,58 @@
+name: CS Check
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  detect-errors:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [8.x, 7.4]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+          tools: composer
+      - name: Install dependencies
+        run: |
+          composer update --prefer-dist --no-progress
+      - name: Run PHPCS
+        run: vendor/bin/phpcs $(find tests/input/* | sort) --report=summary --report-file=phpcs.log || true
+      - name: Check output
+        run: diff tests/expected_report.txt phpcs.log
+
+  fix-errors:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [8.x, 7.4]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+          tools: composer
+      - name: Install dependencies
+        run: |
+          composer update --prefer-dist --no-progress
+      - name: Copy target folder
+        run: cp -R tests/input/ tests/input2/
+      - name: Run PHPCS fixer
+        run: vendor/bin/phpcbf tests/input2 || true
+      - name: Check output
+        run: diff tests/input2 tests/fixed
