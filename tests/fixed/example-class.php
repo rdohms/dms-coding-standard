@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Example;
@@ -33,10 +34,7 @@ class Example implements IteratorAggregate
 
     private bool $baz;
 
-    /**
-     * @var ControlStructureSniff|int|string|null
-     */
-    private $baxBax;
+    private ControlStructureSniff|int|string|null $baxBax = null;
 
     public function __construct(?int $foo = null, array $bar = [], bool $baz = false, $baxBax = 'unused')
     {

@@ -5,6 +5,6 @@
     "license": "MIT",
     "require": {
         "php": "^7.2 || ^8",
-        "doctrine/coding-standard": "^8"
+        "doctrine/coding-standard": "^9"
     }
 }

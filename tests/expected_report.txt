@@ -3,16 +3,16 @@ PHP CODE SNIFFER REPORT SUMMARY
 ----------------------------------------------------------------------
 FILE                                                  ERRORS  WARNINGS
 ----------------------------------------------------------------------
-tests/input/concatenation_spacing.php                 56      0
+tests/input/concatenation_spacing.php                 55      0
 tests/input/example-class.php                         36      0
-tests/input/not_spacing.php                           8       0
-tests/input/return_type_on_closures.php               28      0
-tests/input/return_type_on_methods.php                14      0
-tests/input/test-case.php                             8       0
+tests/input/not_spacing.php                           7       0
+tests/input/return_type_on_closures.php               27      0
+tests/input/return_type_on_methods.php                13      0
+tests/input/test-case.php                             7       0
 ----------------------------------------------------------------------
-A TOTAL OF 150 ERRORS AND 0 WARNINGS WERE FOUND IN 6 FILES
+A TOTAL OF 145 ERRORS AND 0 WARNINGS WERE FOUND IN 6 FILES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX 139 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX 134 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
