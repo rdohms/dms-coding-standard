@@ -6,6 +6,7 @@
     <rule ref="Doctrine">
         <exclude name="Squiz.PHP.GlobalKeyword" />
         <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
+        <exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment"/>
     </rule>
 
     <!-- Require presence of declare(strict_types=1) -->
@@ -23,4 +24,6 @@
             <property name="spacesCountBeforeColon" value="0"/>
         </properties>
     </rule>
+
+
 </ruleset>
