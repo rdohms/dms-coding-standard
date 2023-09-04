@@ -25,29 +25,17 @@ class Example implements IteratorAggregate
 {
     private const VERSION = PHP_VERSION - (PHP_MINOR_VERSION * 100) - PHP_PATCH_VERSION;
 
-    private ?int $foo = null;
-
-    /**
-     * @var string[]
-     */
-    private array $bar;
-
-    private bool $baz;
-
     private ControlStructureSniff|int|string|null $baxBax = null;
 
-    public function __construct(?int $foo = null, array $bar = [], bool $baz = false, $baxBax = 'unused')
+    public function __construct(private int|null $foo = null, private array $bar = [], private bool $baz = false, $baxBax = 'unused')
     {
-        $this->foo    = $foo;
-        $this->bar    = $bar;
-        $this->baz    = $baz;
         $this->baxBax = $baxBax;
     }
 
     /**
      * Description
      */
-    public function getFoo(): ?int
+    public function getFoo(): int|null
     {
         return $this->foo;
     }

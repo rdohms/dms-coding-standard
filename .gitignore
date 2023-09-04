@@ -2,3 +2,4 @@
 /phpcs.xml
 /tests/input2
 /phpcs.log
+composer.lock
