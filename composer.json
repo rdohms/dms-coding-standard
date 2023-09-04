@@ -5,6 +5,11 @@
     "license": "MIT",
     "require": {
         "php": "^7.2 || ^8",
-        "doctrine/coding-standard": "^9"
+        "doctrine/coding-standard": "^12"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
